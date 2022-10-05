@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+body {
+    font: 18px "Nunito", sans-serif;
+    color: black;
+    padding:2rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-color: #487346;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+    
+    
+    
+    
+}    
+.Profile_card{
+    border-radius: 50px;
+    box-shadow: 0px 18px 200px -60px black;
+    backdrop-filter: blur(15px);
+    width: 650px;
+    position: relative;
+    border: 2px solid #ffffff40;
+    padding:  3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.Profile_img img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+}
+.Profile_des{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Profile_des h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.Profile_des div{
+    font-size: 20px;
+}
+.Profile_info{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.Profile_info div{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.Profile_info :first-child{
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.Profile_info :last-child{
+    font-size: 16px;
+    
+    
+}
+.Profile_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.Profile_social a{
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin:15px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    flex-shrink: 0px;
+    transition: all .2s;
+    border-radius: 40%;
+
+}
+.Profile_social a:hover{
+    transform: translateY(-5px);
+    
+}
+.instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5) ;
+}
+.github{
+    background: linear-gradient(45deg, #333333,#626b73);
+    box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+.twitter{
+background: linear-gradient(45deg, #1da1f2, #0e71c8);
+box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7);
+
+}
+.Profile_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.Profile_contact button{
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px 0px;
+    min-width: 250px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+    text-align: center;
+}
+
+.blue{
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    box-shadow: 0 4px 30px rgba(179, 250, 255, 0.4);
+}
+
+.orange{
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    box-shadow: 0 4px 30px rgba(223, 45, 70, 0.35);
+}
+.orange:hover{
+    box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
+    transform: translateY(-5px);
+}
+.blue:hover{
+    box-shadow: 0 7px 30px rgba(179, 250, 255, 0.75) ;
+    transform: translateY(-5px);
+}
